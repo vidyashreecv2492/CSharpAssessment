@@ -1,0 +1,23 @@
+﻿@model ExamWebApp.Models.EmpTable
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Find</title>
+</head>
+<body>
+    <h1>Customer Table</h1>
+    <div>
+        @using (Html.BeginForm())
+        {
+            <p>Enter the Customer Id: @Html.EditorFor((m) => m.CustId)</p>
+            <p>Enter the Customer Name: @Html.EditorFor((m) => m.CustName)</p>
+            <p>Enter the Customer Address: @Html.EditorFor((m) => m.CustAddress)</p>
+            <p>Enter the Customer Manager: @Html.EditorFor((m) => m.CustManager)</p>
+            <button>Save Changes</button>
+        }
+    </div>
+</body>
+</html>

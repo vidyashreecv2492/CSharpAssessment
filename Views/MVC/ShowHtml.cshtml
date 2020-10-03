@@ -1,0 +1,24 @@
+﻿@model ExamWebApp.Models.CustTable
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowHtml</title>
+</head>
+<body>
+    <h1>Employee Details</h1>
+    <hr />
+    <div>
+        <p>ID: @Model.CustId</p>
+        <p>Name: @Model.CustName</p>
+        <p>Address: @Model.CustAddress</p>
+        <p>Salary: @Model.CustSalary</p>
+    </div>
+</body>
+</html>
